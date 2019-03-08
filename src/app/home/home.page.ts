@@ -14,6 +14,10 @@ export class HomePage {
   public mapLng = 13.73427;
   public mapZoom = 12;
 
+  public debug = true;
+  public pickerLat = 51.03522;
+  public pickerLng = 13.73427;
+
   ionViewWillEnter() {
     this.mapComponent.invalidateSize();
   }
