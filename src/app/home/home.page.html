@@ -21,6 +21,8 @@
         </yaga-popup>
     </yaga-marker>
 
+    <yaga-circle-marker *ngFor="let airport of airports" [lat]="airport.lat" [lng]="airport.lng" [color]="'#333'">
+    </yaga-circle-marker>
   </yaga-map>
 
 </ion-content>
