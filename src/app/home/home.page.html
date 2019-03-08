@@ -16,6 +16,9 @@
 
     <yaga-marker *ngIf="debug" [draggable]="true" [(lat)]="pickerLat" [(lng)]="pickerLng">
         <yaga-div-icon></yaga-div-icon>
+        <yaga-popup>
+            "lat": {{ pickerLat }}, "lng": {{ pickerLng }}
+        </yaga-popup>
     </yaga-marker>
 
   </yaga-map>
