@@ -27,6 +27,80 @@
             <p>{{ airport.description }}</p>
         </yaga-popup>
     </yaga-circle-marker>
+
+      <yaga-circle *ngFor="let aircraft of aircrafts" [lat]="aircraft.latitude" [lng]="aircraft.longitude" [radius]="calcRadius(aircraft)" [color]="calcColor(aircraft)">
+          <yaga-popup>
+              <div class="aircraft-info">
+                  <h3>{{ aircraft.callsign }}</h3>
+                  <table>
+                      <tr>
+                          <th>icao24</th>
+                          <td>{{ aircraft.icao24 }}</td>
+                      </tr>
+                      <tr>
+                          <th>callsign</th>
+                          <td>{{ aircraft.callsign }}</td>
+                      </tr>
+                      <tr>
+                          <th>origin_country</th>
+                          <td>{{ aircraft.origin_country }}</td>
+                      </tr>
+                      <tr>
+                          <th>time_position</th>
+                          <td>{{ aircraft.time_position }}</td>
+                      </tr>
+                      <tr>
+                          <th>last_contact</th>
+                          <td>{{ aircraft.last_contact }}</td>
+                      </tr>
+                      <tr>
+                          <th>longitude</th>
+                          <td>{{ aircraft.longitude }}</td>
+                      </tr>
+                      <tr>
+                          <th>latitude</th>
+                          <td>{{ aircraft.latitude }}</td>
+                      </tr>
+                      <tr>
+                          <th>baro_altitude</th>
+                          <td>{{ aircraft.baro_altitude }}</td>
+                      </tr>
+                      <tr>
+                          <th>on_ground</th>
+                          <td>{{ aircraft.on_ground }}</td>
+                      </tr>
+                      <tr>
+                          <th>velocity</th>
+                          <td>{{ aircraft.velocity }}</td>
+                      </tr>
+                      <tr>
+                          <th>true_track</th>
+                          <td>{{ aircraft.true_track }}</td>
+                      </tr>
+                      <tr>
+                          <th>vertical_rate</th>
+                          <td>{{ aircraft.vertical_rate }}</td>
+                      </tr>
+                      <tr>
+                          <th>sensors</th>
+                          <td>{{ aircraft.sensors }}</td>
+                      </tr>
+                      <tr>
+                          <th>geo_altitude</th>
+                          <td>{{ aircraft.geo_altitude }}</td>
+                      </tr>
+                      <tr>
+                          <th>squawk</th>
+                          <td>{{ aircraft.squawk }}</td>
+                      </tr>
+                      <tr>
+                          <th>spi</th>
+                          <td>{{ aircraft.spi }}</td>
+                      </tr>
+                  </table>
+              </div>
+          </yaga-popup>
+      </yaga-circle>
   </yaga-map>
 
 </ion-content>
