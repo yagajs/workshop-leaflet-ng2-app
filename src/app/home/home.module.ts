@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
@@ -13,6 +14,7 @@ import { FlightRadarService } from '../flight-radar.service';
     CommonModule,
     FormsModule,
     IonicModule,
+    HttpClientModule,
     YagaModule,
     RouterModule.forChild([
       {
