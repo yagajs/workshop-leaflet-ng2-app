@@ -9,6 +9,10 @@
 <ion-content>
   <yaga-map style="height: 100%;" [lat]="mapLat" [lng]="mapLng" [zoom]="mapZoom">
     <yaga-tile-layer [url]="tileLayerUrl" [attribution]="'© Openstreetmap and contributors'"></yaga-tile-layer>
+
+    <yaga-attribution-control></yaga-attribution-control>
+    <yaga-zoom-control></yaga-zoom-control>
+    <yaga-scale-control [metric]="true" [imperial]="false"></yaga-scale-control>
   </yaga-map>
 
 </ion-content>
