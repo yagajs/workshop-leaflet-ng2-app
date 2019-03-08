@@ -7,8 +7,8 @@
 </ion-header>
 
 <ion-content>
-  <yaga-map style="height: 100%;">
-    <yaga-tile-layer [url]="'https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png'" [attribution]="'© Openstreetmap and contributors'"></yaga-tile-layer>
+  <yaga-map style="height: 100%;" [lat]="mapLat" [lng]="mapLng" [zoom]="mapZoom">
+    <yaga-tile-layer [url]="tileLayerUrl" [attribution]="'© Openstreetmap and contributors'"></yaga-tile-layer>
   </yaga-map>
 
 </ion-content>
