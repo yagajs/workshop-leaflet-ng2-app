@@ -14,7 +14,7 @@
     <yaga-zoom-control></yaga-zoom-control>
     <yaga-scale-control [metric]="true" [imperial]="false"></yaga-scale-control>
 
-    <yaga-marker *ngIf="debug"  [lat]="pickerLat" [lng]="pickerLng">
+    <yaga-marker *ngIf="debug" [draggable]="true" [lat]="pickerLat" [lng]="pickerLng">
         <yaga-div-icon></yaga-div-icon>
     </yaga-marker>
 
