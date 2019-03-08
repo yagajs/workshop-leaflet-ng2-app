@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { YagaModule } from '@yaga/leaflet-ng2';
 
 import { HomePage } from './home.page';
+import { FlightRadarService } from '../flight-radar.service';
 
 @NgModule({
   imports: [
@@ -20,6 +21,9 @@ import { HomePage } from './home.page';
       }
     ])
   ],
-  declarations: [HomePage]
+  declarations: [HomePage],
+  providers: [
+    FlightRadarService,
+  ]
 })
 export class HomePageModule {}
